@@ -1,0 +1,119 @@
+
+
+
+body{
+
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+}
+
+.conteudo{
+
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-justify: auto;   
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 250px;
+    top: 250px;
+    gap: 50px;
+    padding: 5px;
+}
+
+.conteudo h1{
+
+    font-size: 20px;
+    font-weight: 900px;
+}
+
+.conteudo p{
+
+    font-size: 15px;
+    font-weight: 400px;
+}
+
+.cartaoformulario{
+
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   width: 400px;
+   height: 500px;
+   position: absolute;
+   top: 130px;
+   right: 110px;
+   padding: 50px;
+   gap: 30px;
+   justify-content: space-between;
+   border-radius: 20px;
+
+} 
+
+
+.botaoenviar{
+
+    background-color: #3CCC87;
+}
+
+.aviso{
+
+    display: flex;
+   left: 10px;
+   align-self: flex-start;
+
+}
+
+
+.cartaoformulario form{
+
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+   padding-top: 30px;
+
+}
+
+form input{
+
+    Width: 400px;
+    height: 35px;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: black;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.mensagem{
+
+    width: 400px;
+    height: 100px;
+    text-align: start;
+}
+
+
+.tudocerto{
+
+    border: 1px solid rgb(0, 255, 34);
+    background-color: green;
+}
+
+.tudoerrado{
+
+    border: 1px solid rgb(255, 0, 0);
+    background-color: darkred;
+}
+
+.oculto{
+
+   opacity: 0;
+
+}
