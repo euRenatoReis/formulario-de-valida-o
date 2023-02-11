@@ -1,34 +1,55 @@
 
-const botaoenviar = document.querySelector('.botaoenviar');
+const botaoenviar = document.getElementById('botaoenviar');
 
 var campos = document.querySelectorAll('.campo');
 
 var avisos = document.querySelectorAll('.aviso');
 
 
+campos.forEach(input => {
 
-botaoenviar.addEventListener('click', validar())
+   input.addEventListener('change', () => {
+
+      if (campos.value !== "") {
+
+         input.classList.add("tudocerto")
+         return;
+      }
+      else {
+
+         input.classList.remove("tudocerto")
+      }
 
 
+   })
 
-function validar(){
+})
 
 
-   if(!campos.value){
+botaoenviar.addEventListener("click", () => {
 
-     avisos.classList.remove('oculto');
-     campos.classList.add("tudoerrado");
-     avisos.setAttribute('required', true)
 
-     return;
-   }
-   else{
-   
-      avisos.classList.add("oculto");
-      campos.classList.add("tudocerto");
-      avisos.setAttribute('required', false)
+   campos.forEach(input => {
+
+      campos.trim();
+
+      input.addEventListener('change', () => {
+
  
-      return;
-   }
- 
-}
+         if (campos.value === "") {
+
+            input.classList.add("tudoerrado")
+            return;
+         }
+         else {
+
+            input.classList.remove("tudoerrado")
+         }
+
+
+      })
+
+   })
+
+})
+

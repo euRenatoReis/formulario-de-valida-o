@@ -55,13 +55,15 @@ body{
    justify-content: space-between;
    border-radius: 20px;
 
-} 
+}  
 
 
 .botaoenviar{
 
     background-color: #3CCC87;
 }
+
+.botaoenviar:hover{ background-color: #31a46c;}
 
 .aviso{
 
@@ -92,7 +94,7 @@ form input{
 
 }
 
-.mensagem{
+.campo.mensagem{
 
     width: 400px;
     height: 100px;
@@ -100,20 +102,25 @@ form input{
 }
 
 
-.tudocerto{
+.campo.tudocerto{
 
     border: 1px solid rgb(0, 255, 34);
-    background-color: green;
+    
 }
 
-.tudoerrado{
+.campo.tudoerrado{
 
     border: 1px solid rgb(255, 0, 0);
     background-color: darkred;
 }
 
-.oculto{
+.aviso.oculto{
 
    opacity: 0;
 
+}
+
+.aviso{
+
+    color: red;
 }
